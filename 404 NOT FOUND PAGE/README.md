@@ -24,7 +24,7 @@ El reto consiste en generar, mediante HTML y CSS, una pagina que muestre el mens
 
 Los usuarios deben ser capaces de:
 
-- Visualizar una pantalla de error 404 con una imagen alusiva al error y un boton de redirección a la pagina principal
+- Visualizar una pantalla de error 404 con una imagen alusiva al error y un botón de redirección a la pagina principal
 
 ### Captura de pantalla
 
@@ -52,7 +52,7 @@ Dispositivo de escritorio
 
 ### Lo que aprendí
 
-En este reto aprendimos a utilizar algunas de las propiedades de FlexBox que permitiron dar organizacion a la pagina. Estas son:
+En este reto aprendimos a utilizar algunas de las propiedades de FlexBox que permitieron dar organización a la pagina. Estas son:
 
 ```css
 display: flex;
@@ -90,4 +90,4 @@ Es de gran importancia seguir profundizando en en la herramienta FlexBox ya que 
 
 - Adrian Camilo Gil
 - Sebastian Alvarez Henao
--
+- Diego Armando Galeano
