@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+  --Outfit: "Outfit", sans-serif;
+}
+
+body {
+  background-color: hsl(212, 42%, 88%);
+  font-family: var(--Outfit);
+  text-align: center;
+}
+
+.card {
+  background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 10vh;
+  box-shadow: 10px 10px 20px #b3b3b3;
+}
+
+.card .qr {
+  width: 100%;
+}
+
+.card .qr img {
+  width: 90%;
+  border-radius: 5%;
+  margin-top: 5%;
+}
+.card .title {
+  color: var(--Dark-blue);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0rem;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.card .text {
+  color: var(--Grayish-blue);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@media (min-width: 376px) {
+  body {
+    background-color: hsl(0, 0%, 94%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    background-color: hsl(212, 42%, 88%);
+    width: 80vw;
+    height: 80vh;
+    margin-top: 10vh;
+    box-shadow: 10px 10px 10px gray;
+  }
+}
