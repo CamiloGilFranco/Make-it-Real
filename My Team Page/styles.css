@@ -4,107 +4,153 @@
   box-sizing: border-box;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
 :root {
   --primary-color: #000000;
   --poppins: "Poppins", sans-serif;
 }
-
 body {
-  font-family: var(--poppins);
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: white;
-}
-
-.text {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 300px;
-  width: 100%;
-}
-
-.title {
-  font-size: 45px;
-  font-weight: 700;
-  width: 500px;
-}
-
-.head {
-  margin: 10px 0;
-  font-weight: bold;
-}
-
-.paragraph {
-  font-size: 18px;
-  width: 500px;
-  padding: 0 90px;
+  width: 100vw;
 }
 
 img {
-  width: 200px;
+  width: 100%;
+  object-fit: cover;
 }
 
-.cards {
+h1 {
+  font-size: clamp(1.8rem, 4vw, 2rem);
+}
+
+h2 {
+  font-size: clamp(0.8rem, 4vw, 1rem);
+}
+
+figcaption {
+  font-family: var(--poppins);
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.main-container {
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
+.main-title {
+  font-family: "PT Serif", serif;
+  margin-bottom: 2rem;
+}
+
+.info-section h2,
+.info-section p {
+  font-family: var(--poppins);
+}
+
+.info-section h2 {
+  margin-bottom: 0.5rem;
+}
+
+.info-section p {
+  max-width: 250px;
+  font-size: clamp(0.5rem, 3vw, 1rem);
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+
+.images-container {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
   flex-wrap: wrap;
-  width: 70%;
-  height: 800px;
+  justify-content: space-between;
+  gap: 2rem;
 }
-
-figure {
-  width: 30%;
+.images-container > div {
+  width: 40%;
   display: flex;
-  justify-content: center;
 }
 
-.post {
+.images-container > div > p {
+  font-family: var(--poppins);
+  font-size: 0.5rem;
+  font-weight: 700;
   writing-mode: vertical-lr;
-}
-
-.name {
-  font-weight: bold;
-}
-
-.photo-2,
-.photo-5 {
-  align-self: flex-end;
-}
-
-.footer {
   height: 100px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
 }
 
-span {
-  font-weight: bold;
+.card-1 p {
+  margin-top: 3px;
 }
 
-@media (max-width: 376px) {
-  /*   .text {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
+.card-2,
+.card-4,
+.card-6 {
+  margin-top: 3rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 10px;
+  margin-bottom: 1rem;
+  color: gray;
+}
+
+footer b {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 376px) {
+  h1 {
+    font-size: clamp(1rem, 4vw, 1.7rem);
+  }
+
+  .header-desktop {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+
+  .main-container {
+    max-width: 750px;
+    margin: 3rem auto;
+  }
+
+  .info-section h2 {
+    font-size: 0.5rem;
+    font-weight: 700;
+    font-family: "PT Serif", serif;
+    text-align: left;
+    font-size: clamp(0.5rem, 2vw, 0.7rem);
+  }
+
+  .info-section p {
+    max-width: 250px;
+    font-size: clamp(0.5rem, 2vw, 0.7rem);
+  }
+
+  .images-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .images-container > div {
+    width: 28%;
+  }
+
+  img {
     width: 100%;
-  } */
-  .text {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-    width: 100%;
+  }
+
+  .card-2 {
+    margin-top: 4.5rem;
+  }
+
+  .card-5 {
+    margin-top: 4rem;
+  }
+
+  .card-4,
+  .card-6 {
+    margin-top: initial;
   }
 }
