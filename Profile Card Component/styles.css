@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-red: hsl(1, 90%, 64%);
+  --primary-blue: hsl(219, 85%, 26%);
+
+  --White: hsl(0, 0%, 100%);
+  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Light-grayish-blue1: hsl(211, 68%, 94%);
+  --Light-grayish-blue2: hsl(205, 33%, 90%);
+  --Grayish-blue: hsl(219, 14%, 63%);
+  --Dark-grayish-blue: hsl(219, 12%, 42%);
+  --Very-dark-blue: hsl(224, 21%, 14%);
+
+  --kumbh: "Kumbh Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: hsl(185, 75%, 39%);
+  font-family: var(--kumbh);
+  background-image: url(./src/bg-pattern-top.svg),
+    url(./src/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 35vw bottom 50vh, left 35vw top 50vh;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.picture-profile {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: flex-end;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  width: 350px;
+}
+
+.pattern {
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.profile {
+  position: absolute;
+  bottom: -48px;
+  border-radius: 50%;
+  border: 4px solid var(--White);
+}
+
+.white-card {
+  background-color: var(--White);
+  width: 350px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 30px;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 30px 0;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  border-top: 1px solid hsl(0, 0%, 59%, 0.5);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.text,
+.city,
+span {
+  color: hsl(0, 0%, 59%);
+}
+
+span,
+.name {
+  font-weight: 700;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.name,
+.city {
+  font-size: 16px;
+}
+
+.numbers {
+  font-size: 20px;
+}
+
+@media (min-width: 376px) {
+  body {
+    background-color: white;
+    background-image: none;
+  }
+
+  main {
+    background-color: hsl(185, 75%, 39%);
+    margin: 20px;
+    background-image: url(./src/bg-pattern-top.svg),
+      url(./src/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 30vw bottom 40vh, left 30vw top 40vh;
+
+    width: 80%;
+    height: 80%;
+  }
+}
