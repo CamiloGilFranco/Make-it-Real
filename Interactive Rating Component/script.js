@@ -8,7 +8,6 @@ let stars = document.querySelector(".quantity");
 let number = 0;
 
 for (let i = 0; i < radios.length; i++) {
-  console.log(radios[i]);
   radios[i].addEventListener("change", (e) => {
     for (let j = 0; j < radios.length; j++) {
       labels[j].classList.remove("color-change");
