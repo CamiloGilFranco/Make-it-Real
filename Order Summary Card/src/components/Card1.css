@@ -1,0 +1,110 @@
+.main-container {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    font-family: var(--font-family);
+    background-color: white;
+    box-shadow: #D6E1FF 0px 13px 27px -5px, #D6E1FF 0px 8px 16px -8px;
+
+}
+.img {
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.text-container h1 {
+    font-size: 22px;
+    color: var(--Dark-blue);
+    padding: 10px;
+    
+    
+}
+
+.text-container p {
+    font-size: 16px;
+    color: var(--Desaturated-blue);
+    text-align: center;
+    padding: 10px;
+    line-height: 25px; 
+}
+
+.payment-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.payment-container {
+    background-color: #F8F9FE;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.text-annual h2 {
+    font-size: 14px;
+    color: var(--Dark-blue);
+    width: 100%;
+    font-weight: 900;
+
+}
+
+.payment-container span {
+    font-size: 14px;
+    color:var(--Desaturated-blue);
+    font-weight: 700;
+}
+
+.payment-container a {
+    font-size: 14px;
+    color: #5651A5;
+    font-weight: 900;
+}
+
+a:hover {
+    color:#766CF1;
+    text-decoration: none;
+}
+
+.proceed {
+    width: 90%;
+    background-color: var(--Bright-blue);
+    color: white;
+    border-radius: 10px;
+    height: 50px;
+    border: none;
+    margin: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: var(--Bright-blue) 0px 13px 27px -5px, var(--Bright-blue) 0px 8px 16px -8px;
+    margin-top: 20px;
+}
+.proceed:hover {
+    cursor: pointer;
+    background-color: #766CF1;
+}
+.cancel {
+    background-color: transparent;
+    border: none;
+    width: 90%;
+    height: 50px;
+    font-size: 14px;
+    color:var(--Desaturated-blue);
+    font-weight: 700;
+}
+.cancel:hover {
+    cursor: pointer;
+    color:var(--Dark-blue);
+}
